@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Угадай число</title>
+</head>
+<body>
+  <h1>Угадай число от 1 до 100!</h1>
+  <p>Введите число:</p>
+  <input type="text" id="guessInput">
+  <button onclick="checkGuess()">Проверить</button>
+  <p id="result"></p>
+  <div id="gifContainer" style="display: none;"></div>
+  <script>
+    // Загадываем случайное число от 1 до 100
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+    let numGuesses = 0; // Счетчик попыток
+
+    function checkGuess() {
+      const guessInput = document.getElementById("guessInput");
+      const guess = parseInt(guessInput.value);
+
+      if (isNaN(guess) || guess < 1 || guess > 100) {
+        // Если введено некорректное число
+        document.getElementById("result").textContent = "Введите число от 1 до 100";
+      } else if (guess === secretNumber) {
+        // Если число угадано
+        numGuesses++;
+        document.getElementById("result").textContent = `Вы угадали число за ${numGuesses} попыток!`;
+        document.getElementById("guessInput").disabled = true;
+        showGifs(); // вызываем функцию для отображения гифок
+      } else if (guess < secretNumber) {
+        // Если загаданное число больше введенного
+        numGuesses++;
+        document.getElementById("result").textContent = "Загаданное число больше!";
+      } else {
+        // Если загаданное число меньше введенного
+        numGuesses++;
+        document.getElementById("result").textContent = "Загаданное число меньше!";
+      }
+    }
+
+    function showGifs() {
+      const gifUrls = [
+        "https://media1.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif?cid=bb5a1c3ast5w1djoffy2lwjb6e4zd1me7e72fieq9qmgc3pv&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media2.giphy.com/media/l0HlGdXFWYbKv5rby/giphy.gif?cid=ecf05e47wp6i13pw3m0vh1ojbnphf012e0kvzr1ww7gwi9k6&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media0.giphy.com/media/a34HjLEsKchWM/giphy.gif?cid=ecf05e47xkb7h5fg7zjnz52mxqmeevqkvx13zms2jbqu9tue&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media1.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif?cid=bb5a1c3ast5w1djoffy2lwjb6e4zd1me7e72fieq9qmgc3pv&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media2.giphy.com/media/l0HlGdXFWYbKv5rby/giphy.gif?cid=ecf05e47wp6i13pw3m0vh1ojbnphf012e0kvzr1ww7gwi9k6&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media0.giphy.com/media/a34HjLEsKchWM/giphy.gif?cid=ecf05e47xkb7h5fg7zjnz52mxqmeevqkvx13zms2jbqu9tue&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media1.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif?cid=bb5a1c3ast5w1djoffy2lwjb6e4zd1me7e72fieq9qmgc3pv&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media2.giphy.com/media/l0HlGdXFWYbKv5rby/giphy.gif?cid=ecf05e47wp6i13pw3m0vh1ojbnphf012e0kvzr1ww7gwi9k6&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media0.giphy.com/media/a34HjLEsKchWM/giphy.gif?cid=ecf05e47xkb7h5fg7zjnz52mxqmeevqkvx13zms2jbqu9tue&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
+        "https://media1.giphy.com/media/Pr3lkOKi3BRug1yr7d/giphy.gif?cid=ecf05e47ka7ltvjz1za8thd0s8u7m51qedeifetl843l3ovp&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+      ];
+
+      const gifContainer = document.getElementById("gifContainer");
+      gifContainer.style.display = "block";
+
+      for (let i = 0; i < gifUrls.length; i++) {
+        const img = document.createElement("img");
+        img.src = gifUrls[i];
+        gifContainer.appendChild(img);
+      }
+    }
+  </script>
+</body>
+</html>
+

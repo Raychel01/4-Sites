@@ -1,0 +1,58 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial;
+    margin: 0 ;
+}
+
+
+.header {
+    padding: 11%;
+    text-align: center;
+    color: #f1f1f1;
+    background-image: url(https://images.ctfassets.net/swt2dsco9mfe/2Oy9VYIcwsCbYAKyJmT9SZ/7bd3518d08568586c150b92a49df77e3/oq8L2ycvyuc1_hero.jpg?q=70&w=1920)
+    
+}
+
+
+.header h1 {
+    font-size: 100px;
+}
+
+.accordion {
+    background-color: #9b7c63;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: rgb(184, 153, 127);
+    display: none;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+
+  
+
+ 

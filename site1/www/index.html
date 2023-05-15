@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 	<title>Мой сайт</title> -->
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="site.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем стили для слайдера -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+	
+</head>
+<body>
+	<!-- Баннер -->
+	<div class="banner">
+		<img src="img/space duolingo.png" >
+	</div>
+
+
+	<!-- Слайдер -->
+	<div class="slider-container">
+		<div class="slider">
+			<img src="https://say-hi.me/wp-content/uploads/2019/01/duo-perspective-study-2.jpg" class="slider-image" alt="">
+			<img src="https://say-hi.me/wp-content/uploads/2019/01/duo-perspective-study.jpg" class="slider-image" alt="">
+			<img src="https://sun9-22.userapi.com/pCKizK7gzF5gL97nZHN6F25S3V1PAL-dRZb6gQ/TEJeL2LHBBE.jpg" class="slider-image" alt="">
+		</div>
+	</div>
+
+	<!-- Текст в ячейках -->
+	<div class="text-container">
+		<div class="text-cell">
+			Бесплатное обучение языку. Duolingo - это бесплатная платформа для изучения языков. 
+            Она доступна для всех, кто хочет научиться новому языку. Это дает людям возможность изучать язык даже без значительных финансовых вложений.
+		</div>
+		<div class="text-cell">
+			Удобная форма обучения. Duolingo предлагает пользовательскую дружественную форму обучения языку, которая учитывает особенности каждого ученика. 
+            Пользователи могут изучать язык в своем собственном темпе, повторять уроки и переходить к более сложным урокам, когда они готовы.
+		</div>
+		<div class="text-cell">
+			Эффективность. Дуолинго использует современную методику обучения, включающую в себя элементы геймификации, которая делает обучение более привлекательным и интересным. Это помогает учащимся лучше запоминать материал и быстрее достигать результатов. Кроме того, 
+            Duolingo использует искусственный интеллект для персонализации обучения каждому пользователю, что повышает эффективность обучения и помогает достигать лучших результатов.
+		</div>
+	</div>
+
+    <img src="img/Duolingo_PressKit_DuoCheer_Loop_5001.gif" >
+
+	<!-- Подключаем скрипт для работы слайдера -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+	$('.slider').slick({
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+</script>
+
+
+	

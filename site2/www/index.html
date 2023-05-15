@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Название ресторана</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Стили для меню */
+		.menu {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.menu-item {
+			width: 30%;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #1a1a1a;
+			box-shadow: 2px 2px 5px #050505;
+			border-radius: 5px;
+			background-color: #131313;
+			text-align: center;
+		}
+
+		.menu-item img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+
+		/* Стили для контактной информации */
+		.contact-info {
+			margin-top: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- Шапка сайта -->
+<header>
+	<h1>Pistachio</h1>
+	<nav>
+		<ul>
+			<li><a href="#" class="nav-link">Главная</a></li>
+			<li><a href="#" class="nav-link">Меню</a></li>
+			<li><a href="#" class="nav-link">Контакты</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<!-- Баннер -->
+	<div class="banner">
+		<img src="https://food.pibig.info/uploads/posts/2023-03/1679720910_food-pibig-info-p-restorannaya-yeda-oboi-3.jpg" alt="Баннер">
+	</div>
+
+	<!-- Секция меню -->
+	<section class="menu">
+		<div class="menu-item">
+			<img src="https://matryoshka-rest.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/05/dsc4497.jpg.webp" alt="Меню 1">
+			<h2>Зеленый салат с запеченными перцами</h2>
+			<p>микс салатов, оливки, каперсы</p>
+			<p>Цена: 720 ₽.</p>
+		</div>
+		<div class="menu-item">
+			<img src="https://matryoshka-rest.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/05/dsc4616.jpg.webp" alt="Меню 2">
+			<h2>Котлета по-киевски</h2>
+			<p>эстрагоновое масло, картофельный гратен</p>
+			<p>Цена: 950 ₽.</p>
+		</div>
+		<div class="menu-item">
+			<img src="https://matryoshka-rest.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/12/dsc4589.jpg.webp" alt="Меню 3">
+			<h2>Лосось на гриле</h2>
+			<p>помидоры, перец, спаржа, салат</p>
+			<p>Цена: 1850 ₽.</p>
+		</div>
+	</section>
+
+	<!-- Секция контактной информации -->
+<section class="contact-info">
+	<h2>Контактная информация</h2>
+	<ul>
+		<li><a href="tel:8-800-123-45-67" class="contact-link">8 (800) 123-45-67</a></li>
+		<li><a href="mailto:info@restoran.ru" class="contact-link">info@restoran.ru</a></li>
+		<li><a href="#" class="contact-link">Адрес: г.Москва, ул. Примерная, д. 1</a></li>
+	</ul>
+</section>
+
+	<!-- Подвал сайта -->
+	<footer>

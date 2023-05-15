@@ -1,0 +1,95 @@
+body {
+  background-image: url("https://podacha-blud.com/uploads/posts/2022-10/1665575944_1-podacha-blud-com-p-fud-foto-na-temnom-fone-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+header {
+	background-color: #131313;
+	padding: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+	background-color: #131313;
+	padding: 20px;
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+}
+
+/* Стили для заголовка меню */
+h1 {
+	font-size: 48px;
+	margin: 20px 0;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+.contact-info h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+/* Стили для главного меню */
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #131313;
+}
+
+/* Стили для контактной информации */
+.contact-info {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.contact-info ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-info li {
+	margin: 10px;
+}
+
+.contact-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #131313;
+}
+
+.contact-link:hover {
+	background-color: #fff;
+	color: #131313;
+}
